@@ -30,6 +30,11 @@ Prerequisites:
 
 In Red Hat Enterprise Linux and other Linux distributions, nvme1n1 represents an NVMe (Non-Volatile Memory Express) device. NVMe devices are typically used for high-speed storage and are commonly found in modern servers and workstations.
 
+All devices in linux reside in /dev/ directory. we can inspect or check it using this command ls /dev/ and make sure you see all the newly created block devices their names will likely be nvme1n1, nvme2n1, nvme3n1:
+
+![ls dev](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/074d7312-8533-4e7d-957a-b22332118429)
+
+
 
 
 
