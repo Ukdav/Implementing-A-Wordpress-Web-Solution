@@ -36,7 +36,25 @@ All devices in linux reside in */dev/* directory. we can inspect or check it usi
 
 * Use *df -f* command to see all mounts and free space on your server
 
-![df -h](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/a36f1202-7ebe-46f9-b1d6-4ff813f6fde4)
+![df -h](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/a36f1202-7ebe-46f9-b1d6-4ff813f6fde4
+
+* Use gdisk utility to create a single partition on each of the 3 disk using the commands below:
+
+1. *sudo gdisk /dev/nvem1n1*
+
+2. *sudo gdisk /dev/nvem2n1*
+
+3. *sudo gdisk /dev/nvem3n1*
+
+![new partition 3](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/6c5dba8e-bf9a-4eff-a926-d10766c4a154)
+
+![lsblk for new partion](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/9612c4f0-9ca7-4180-a00f-15c5b4122246)
+
+
+
+
+
+
 
 
 
