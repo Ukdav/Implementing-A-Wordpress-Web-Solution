@@ -50,7 +50,7 @@ All devices in linux reside in */dev/* directory. we can inspect or check it usi
 
 ![lsblk for new partion](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/9612c4f0-9ca7-4180-a00f-15c5b4122246)
 
-* Installing LVM2 package for creating logical volumes on a linux server, using this command: *sudo yum install lvm2*
+* Installing LVM2 package for creating logical volumes on a linux server, using this command: *sudo yum install lvm2* and RUN *sudo pvs*
 
 ![sudo yum install lvm2](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/04d2af20-1b69-4a6a-8bd4-3c1a91f46644)
 
