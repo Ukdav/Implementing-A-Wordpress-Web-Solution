@@ -89,6 +89,27 @@ All devices in linux reside in */dev/* directory. we can inspect or check it usi
 
 ![sudo lsblk](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/c37d3b90-3571-4a7e-952b-1d3592974efa)
 
+* Use *mkfs.ext4* to formant the logical volumes with ext4 filessystem by using the below code:
+
+*sudo mkfs -t ext4 /dev/webdata-vg/apps-lv*
+*sudo mkfs -t ext4 /dev/webdata-vg/logs-lv*
+
+* Create /var/www/html directory to store website files
+
+*sudo mkdir -p /var/www/html/*
+
+* Create /home/recovery/logs to store backup of log data
+
+*sudo mkdir -p /home/recovery/logs/*
+
+* Mount /var/www/html on apps-lv logical volume
+
+*sudo mount /dev/webdata-vg/apps-lv /var/www/html/*
+
+![mkfs](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/2fb015ae-3a89-49e5-a5ee-60b2e615d6be)
+
+
+
 
 
 
