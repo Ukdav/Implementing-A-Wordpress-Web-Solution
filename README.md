@@ -54,6 +54,12 @@ All devices in linux reside in */dev/* directory. we can inspect or check it usi
 
 ![sudo yum install lvm2](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/04d2af20-1b69-4a6a-8bd4-3c1a91f46644)
 
+* Creating Physical Volumes on the partitioned disk volumes
+*sudo pvcreate <partition_path>*
+
+![pvcreate](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/12ff974e-1fa2-4519-9cec-9ebab549d13b)
+
+
 
 
 
