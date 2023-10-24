@@ -40,11 +40,11 @@ All devices in linux reside in */dev/* directory. we can inspect or check it usi
 
 * Use gdisk utility to create a single partition on each of the 3 disk using the commands below:
 
-1. *sudo gdisk /dev/nvem1n1*
+1. *sudo gdisk /dev/nvme1n1*
 
-2. *sudo gdisk /dev/nvem2n1*
+2. *sudo gdisk /dev/nvme2n1*
 
-3. *sudo gdisk /dev/nvem3n1*
+3. *sudo gdisk /dev/nvme3n1*
 
 ![new partition 3](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/6c5dba8e-bf9a-4eff-a926-d10766c4a154)
 
