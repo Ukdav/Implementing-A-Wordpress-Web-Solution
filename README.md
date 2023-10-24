@@ -79,6 +79,19 @@ All devices in linux reside in */dev/* directory. we can inspect or check it usi
 
 ![lvs](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/0307c237-c5ab-4622-bf83-91ebf40c1a42)
 
+* To verify the entire setup using the below command
+
+*sudo vgdisplay -v #view complete setup - VG, PV, and LV*
+
+![vgdisplay](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/0c68456b-b85b-4b6c-b650-818e0bc1f612)
+
+*Sudo lsblk*
+
+![sudo lsblk](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/c37d3b90-3571-4a7e-952b-1d3592974efa)
+
+
+
+
 
 
 
