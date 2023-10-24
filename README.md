@@ -117,7 +117,10 @@ All devices in linux reside in */dev/* directory. we can inspect or check it usi
 
 * Use *rsync* utility to backup all the files in the log directory /var/log/ into /home/recovery/logs (This is required before mounting the file system)
 
-* Using the following code: *sudo rsync -av /var/log/. /home/recovery/logs/
+* Using the following code: *sudo rsync -av /var/log/. /home/recovery/logs/*
+
+![rsync](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/fc3722cc-586f-4e9e-933f-9ab5c81ad746)
+
 
 * Mount /var/log/ on logs-lv logical volume. (Note that all the existing data on /var/log/ will be deleted. That is why the above step is very important). 
 
