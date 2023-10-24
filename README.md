@@ -67,6 +67,20 @@ All devices in linux reside in */dev/* directory. we can inspect or check it usi
 
 ![vgcreate](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/2a11eb73-d3ab-47e3-8847-c177f3ab32a2)
 
+* Use Lvcreate utility to create 2 logical volumes. apps-lv (Use half of the PV size) and logs-lv use the remaining space of the PV size.
+
+*NOTE* apps-lv will be used to store data of the website while, logs-lv will be used to store data for logs. below are the commands:
+
+*sudo lvcreate -n apps-lv -L 14G webdata-vg*
+
+*sudo lvcreate -n logs-lv -L 14G webdata-vg
+
+* Verify that your logical volume has been created successfully by running *sudo lvs*
+
+![lvs](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/0307c237-c5ab-4622-bf83-91ebf40c1a42)
+
+
+
 
 
 
