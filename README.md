@@ -34,6 +34,11 @@ All devices in linux reside in */dev/* directory. we can inspect or check it usi
 
 ![ls dev](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/074d7312-8533-4e7d-957a-b22332118429)
 
+* Use *df -f* command to see all mounts and free space on your server
+
+![df -h](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/a36f1202-7ebe-46f9-b1d6-4ff813f6fde4)
+
+
 
 
 
