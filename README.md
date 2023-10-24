@@ -149,7 +149,10 @@ update /etc/fstab/ in this formant using your own UUID and remember to remove th
 
 *sudo systemctl daemon-reload*
 
-![sudo mount](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/17bafc9a-e371-4668-ad94-9fa7c367b05a)
+![mount and reload](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/594bb735-cce9-48ac-a234-5dce045a273a)
+
+
+
 
 
 
