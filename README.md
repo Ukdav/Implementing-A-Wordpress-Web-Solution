@@ -115,6 +115,16 @@ All devices in linux reside in */dev/* directory. we can inspect or check it usi
 
 ![mkfs](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/2fb015ae-3a89-49e5-a5ee-60b2e615d6be)
 
+* Use *rsync* utility to backup all the files in the log directory /var/log/ into /home/recovery/logs (This is required before mounting the file system)
+
+* Using the following code: *sudo rsync -av /var/log/. /home/recovery/logs/
+
+* Mount /var/log/ on logs-lv logical volume. (Note that all the existing data on /var/log/ will be deleted. That is why the above step is very important). 
+
+* use this command *sudo mount dev/webdata-vg/logs-lv /var/log/*
+
+* Restore logfiles back into /var/log/ directory using this command: *sudo rsync -av /home/recovery/logs/log/. /var/log*
+
 
 
 
