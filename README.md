@@ -24,7 +24,7 @@ Prerequisites:
 
 ![volume attached](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/f9d0c055-3e25-4857-952d-9df0c6ded923)
 
-* SSH into the instance and on the EC2 terminal, view the disks attached to the instance. This is achieved using the -lsblk- command.
+* SSH into the instance and on the EC2 terminal, view the disks attached to the instance. This is achieved using the - lsblk - command.
 
 ![lsblk](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/72c4fa29-3c80-4fb4-8274-120628da539d)
 
