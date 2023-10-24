@@ -121,12 +121,16 @@ All devices in linux reside in */dev/* directory. we can inspect or check it usi
 
 ![rsync](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/fc3722cc-586f-4e9e-933f-9ab5c81ad746)
 
-
 * Mount /var/log/ on logs-lv logical volume. (Note that all the existing data on /var/log/ will be deleted. That is why the above step is very important). 
 
 * use this command *sudo mount dev/webdata-vg/logs-lv /var/log/*
 
-* Restore logfiles back into /var/log/ directory using this command: *sudo rsync -av /home/recovery/logs/log/. /var/log*
+  ![sudo mount](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/f60d8726-245d-4ffd-ad0e-4e6054128959)
+
+* Restore logfiles back into /var/log/ directory using this command: *sudo rsync -av /home/recovery/logs/ /var/log*
+  
+![sudo rsync](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/8d964fbd-4d07-4846-a550-cb5dc6e0d23b)
+
 
 
 
