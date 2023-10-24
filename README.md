@@ -143,6 +143,15 @@ update /etc/fstab/ in this formant using your own UUID and remember to remove th
 
 ![vi edit](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/b562e1f0-ca50-4eb6-8851-937230c8ebe1)
 
+* Test the configuration and reload the daemon
+
+*sudo mount -a*
+
+*sudo systemctl daemon-reload*
+
+![sudo mount](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/17bafc9a-e371-4668-ad94-9fa7c367b05a)
+
+
 
 
 
