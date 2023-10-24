@@ -115,7 +115,7 @@ All devices in linux reside in */dev/* directory. we can inspect or check it usi
 
 ![mkfs](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/2fb015ae-3a89-49e5-a5ee-60b2e615d6be)
 
-* Use *rsync* utility to backup all the files in the log directory /var/log/ into /home/recovery/logs (This is required before mounting the file system)
+* Use the *rsync* utility to backup all the files in the log directory /var/log/ into /home/recovery/logs (This is required before mounting the file system)
 
 * Using the following code: *sudo rsync -av /var/log/. /home/recovery/logs/*
 
@@ -128,6 +128,25 @@ All devices in linux reside in */dev/* directory. we can inspect or check it usi
 * Restore logfiles back into /var/log/ directory using this command: *sudo rsync -av /home/recovery/logs/ /var/log*
   
 ![sudo rsync](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/8d964fbd-4d07-4846-a550-cb5dc6e0d23b)
+
+* Update /etc/fstab/ file so that the mount configuration will persist after restart of the server.
+
+The UUID of the device will be used to update the etc/fstab/ file: 
+
+command: *sudo blkid*
+
+![sudo blkid](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/1a415f4d-c67c-4c65-a518-2617892448fc)
+
+*sudo vi /etc/fstab*
+
+update /etc/fstab/ in this formant using your own UUID and remember to remove the leading and ending quotes
+
+![vi edit](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/b562e1f0-ca50-4eb6-8851-937230c8ebe1)
+
+
+
+
+
 
 
 
