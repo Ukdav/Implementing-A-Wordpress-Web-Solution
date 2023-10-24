@@ -155,6 +155,10 @@ update /etc/fstab/ in this formant using your own UUID and remember to remove th
 
 ![df -f 2](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/c8beba06-37ea-4ace-83e0-cb76537e73ff)
 
+## Installing WordPress and configuring to use MYSQL DATABASE
+
+-STEP 2 Prepare the Database Server-
+
 
 
 
