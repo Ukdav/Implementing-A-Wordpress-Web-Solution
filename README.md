@@ -73,7 +73,7 @@ All devices in linux reside in */dev/* directory. we can inspect or check it usi
 
 *sudo lvcreate -n apps-lv -L 14G webdata-vg*
 
-*sudo lvcreate -n logs-lv -L 14G webdata-vg
+*sudo lvcreate -n logs-lv -L 14G webdata-vg*
 
 * Verify that your logical volume has been created successfully by running *sudo lvs*
 
