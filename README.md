@@ -59,6 +59,13 @@ All devices in linux reside in */dev/* directory. we can inspect or check it usi
 
 ![pvcreate](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/12ff974e-1fa2-4519-9cec-9ebab549d13b)
 
+* Use Vgcreate utility to add all 3 PVS to a volume group (VG). Name the VG webdata-vg using this command: *sudo vgcreate webdata-vg /dev/nvme1n1p9 /dev/nvme2n1p1 /dev/nvme3n1p1*
+  
+* verifying that your VG has been created successfully by running this commad *sudo vgs*
+
+![vgcreate](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/2a11eb73-d3ab-47e3-8847-c177f3ab32a2)
+
+
 
 
 
