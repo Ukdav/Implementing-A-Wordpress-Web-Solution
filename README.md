@@ -163,6 +163,16 @@ Repeated all the steps taken to configure the web server on the db server. Chang
 
 ![new server 1](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/1c0efefb-643d-40b3-8859-5075ef7dec88)
 
+**Step 3: Configuring Web Server**
+
+* Run updates and install httpd on web server
+  
+*yum install -y update*
+
+*sudo yum -y install wget httpd php php-mysqlnd php-fpm php-json*
+
+Start web server
+
 
 
 
