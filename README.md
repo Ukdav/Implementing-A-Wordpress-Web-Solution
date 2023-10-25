@@ -161,7 +161,8 @@ update /etc/fstab/ in this formant using your own UUID and remember to remove th
 
 Repeated all the steps taken to configure the web server on the db server. Changed the apps-lv logical volume to db-lv
 
-![new server 1](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/1c0efefb-643d-40b3-8859-5075ef7dec88)
+![new server 1](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/9e29e803-ca16-40b8-a805-2719dc129c31)
+
 
 **Step 3: Configuring Web Server**
 
@@ -169,9 +170,16 @@ Repeated all the steps taken to configure the web server on the db server. Chang
   
 *yum install -y update*
 
+![sudo yum update](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/7e81dea9-e183-48f5-b082-9a7b6db4b1e1)
+
 *sudo yum -y install wget httpd php php-mysqlnd php-fpm php-json*
 
+![sudo yum -y](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/bf8fb0c5-76b1-4fce-a7fa-8d1adc92e3c4)
+
 Start web server
+
+![enable](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/3df8607d-3dc1-43c1-8462-ae6153d022ad)
+
 
 
 
