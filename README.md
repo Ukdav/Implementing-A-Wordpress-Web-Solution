@@ -151,13 +151,18 @@ update /etc/fstab/ in this formant using your own UUID and remember to remove th
 
 ![mount and reload](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/594bb735-cce9-48ac-a234-5dce045a273a)
 
-* Verify your setup by running df -f output be displayed like this
+* Verify your setup by running df -h output be displayed like this
 
 ![df -f 2](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/c8beba06-37ea-4ace-83e0-cb76537e73ff)
 
 ## Installing WordPress and configuring to use MYSQL DATABASE
 
 **STEP 2 Prepare the Database Server**
+
+Repeated all the steps taken to configure the web server on the db server. Changed the apps-lv logical volume to db-lv
+
+![new server 1](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/1c0efefb-643d-40b3-8859-5075ef7dec88)
+
 
 
 
