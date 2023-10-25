@@ -157,7 +157,9 @@ update /etc/fstab/ in this formant using your own UUID and remember to remove th
 
 ## Installing WordPress and configuring to use MYSQL DATABASE
 
--STEP 2 Prepare the Database Server-
+**STEP 2 Prepare the Database Server**
+
+
 
 
 
