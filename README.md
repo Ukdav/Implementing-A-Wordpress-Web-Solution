@@ -284,13 +284,43 @@ sudo mysql -u myuser -p -h <172.31.47.192>
 
 ![connecting from webserver to db](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/c82fbfc6-fc8f-445a-bcb2-8eb23ca0cfa4)
 
-Ensure that you are specifying the correct path to the directory where the wp-config.php file should be located. using this command to edit the database server with your credentials:
+Ensure that you are specifying the correct path to the directory where the wp-config.php file should be located. Use this command to edit the database server with your credentials:
 
 *sudo vi /var/www/html/wordpress/wp-config.php*
 
 ![config](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/d5c1fadc-a3f4-4b5e-8ddc-2588499305df)
 
 ![sudo vi](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/e9c80ebd-8a21-4bff-b2e1-3541f2334ce6)
+
+* On the web browser, access web server using the public ip address of the server
+
+![worlpress server on browser](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/849da84b-00aa-4f37-a103-e3204b2838a8)
+
+![wordpress dashboard](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/b8bd70e8-91fc-462d-b93c-d199bf3f825b)
+
+Implementing A WordPress Web Solution With LVM Storage Management" is a comprehensive guide that outlines the process of setting up a WordPress website using Logical 
+
+Volume Management (LVM) for storage management. LVM is a flexible and efficient way to manage disk space, and this guide explores its application in a WordPress context.
+
+In summary, the guide covers the following key points:
+
+1. **LVM Introduction**: It introduces Logical Volume Management, explaining its benefits, including dynamic resizing and easy snapshot creation.
+
+2. **Prerequisites**: The guide lists the prerequisites, such as a Linux-based server and WordPress installation, required for setting up a WordPress website.
+
+3. **LVM Configuration**: It provides a step-by-step tutorial on configuring LVM, creating logical volumes, and mounting them for WordPress use.
+
+4. **WordPress Setup**: The guide outlines how to install and configure WordPress on the LVM-managed storage.
+
+5. **Optimizing LVM**: It discusses optimization strategies for managing storage efficiently within LVM.
+
+In conclusion, "Implementing A WordPress Web Solution With LVM Storage Management" offers a practical approach to enhancing WordPress website management through LVM.
+
+By implementing LVM, users can take advantage of its flexibility, scalability, and snapshot capabilities to better manage storage resources, ensuring their WordPress sites
+
+run efficiently and reliably. This approach can be especially valuable for users seeking to streamline their web hosting infrastructure and enhance data management.
+
+
 
 
 
