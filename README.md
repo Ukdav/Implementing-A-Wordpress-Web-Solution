@@ -131,15 +131,15 @@ Verify that your physical volume has been created successfully by running this c
 
 * Using the following code: *sudo rsync -av /var/log/. /home/recovery/logs/*
 
-![sudo moung rsync](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/3186cdd9-7a69-4c8c-9326-14ba3b09b853)
-
 * Mount /var/log/ on logs-lv logical volume. (Note that all the existing data on /var/log/ will be deleted. That is why the above step is very important). 
 
 * use this command *sudo mount dev/webdata-vg/logs-lv /var/log/*
 
-* Restore logfiles back into /var/log/ directory using this command: *sudo rsync -av /home/recovery/logs/ /var/log*
-  
-![sudo rsync](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/8d964fbd-4d07-4846-a550-cb5dc6e0d23b)
+* Restore logfiles into /var/log/ directory using this command: *sudo rsync -av /home/recovery/logs/ /var/log*
+
+![sudo moung rsync](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/3186cdd9-7a69-4c8c-9326-14ba3b09b853)
+
+![sudo moung rsync](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/675511ba-5c88-4577-b99c-e9ad2d9cab5a)
 
 * Update /etc/fstab/ file so that the mount configuration will persist after restart of the server.
 
@@ -147,13 +147,15 @@ The UUID of the device will be used to update the etc/fstab/ file:
 
 command: *sudo blkid*
 
-![sudo blkid](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/1a415f4d-c67c-4c65-a518-2617892448fc)
+![sudo blkid](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/5a4c87e3-740a-414c-8a74-70b3882d9155)
 
 *sudo vi /etc/fstab*
 
-update /etc/fstab/ in this formant using your own UUID and remember to remove the leading and ending quotes
+update /etc/fstab/ in this formant using your UUID and remember to remove the leading and ending quotes
 
-![vi edit](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/b562e1f0-ca50-4eb6-8851-937230c8ebe1)
+![sudo vi etcfstab](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/7218bc21-6409-454d-80d3-ff95b1812c27)
+
+![sudo vi etcfstab1](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/c0dbe65d-80f2-42af-ac66-4438b980ed20)
 
 * Test the configuration and reload the daemon
 
@@ -161,11 +163,12 @@ update /etc/fstab/ in this formant using your own UUID and remember to remove th
 
 *sudo systemctl daemon-reload*
 
-![mount and reload](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/594bb735-cce9-48ac-a234-5dce045a273a)
+![df -hcommand](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/3cbaa0d2-7345-4e87-aa1d-fe68a73a7f9a)
 
 * Verify your setup by running df -h output be displayed like this
 
-![df -f 2](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/c8beba06-37ea-4ace-83e0-cb76537e73ff)
+![df hmount mapper](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/24938c4e-4fc4-42dd-971c-d6eae075397f)
+
 
 ## Installing WordPress and configuring to use MYSQL DATABASE
 
