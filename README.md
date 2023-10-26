@@ -176,7 +176,7 @@ Repeated all the steps taken to configure the web server on the db server. Chang
 
 ![sudo yum -y](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/bf8fb0c5-76b1-4fce-a7fa-8d1adc92e3c4)
 
-Start web server
+* Start web server
 
 ![enable](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/3df8607d-3dc1-43c1-8462-ae6153d022ad)
 
