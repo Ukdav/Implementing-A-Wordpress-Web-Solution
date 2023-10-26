@@ -32,11 +32,11 @@ In Red Hat Enterprise Linux and other Linux distributions, nvme1n1 represents an
 
 All devices in linux reside in */dev/* directory. we can inspect or check it using this command *ls /dev* and make sure you see all the newly created block devices their names will likely be nvme1n1, nvme2n1, nvme3n1:
 
-![ls dev](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/074d7312-8533-4e7d-957a-b22332118429)
+![ls dev command](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/66716472-3d94-4b88-bdfc-3abbd267b68a)
 
 * Use *df -f* command to see all mounts and free space on your server
 
-![df -h](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/a36f1202-7ebe-46f9-b1d6-4ff813f6fde4
+![df -hcommand](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/a8d187a1-c51c-4ece-9d47-b662d0fc003a)
 
 * Use gdisk utility to create a single partition on each of the 3 disk using the commands below:
 
@@ -46,7 +46,7 @@ All devices in linux reside in */dev/* directory. we can inspect or check it usi
 
 3. *sudo gdisk /dev/nvme3n1*
 
-![new partition 3](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/6c5dba8e-bf9a-4eff-a926-d10766c4a154)
+![sudo gdisk](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/24bc17b7-06f0-49e9-9f81-82617f483db1)
 
 ![lsblk for new partion](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/9612c4f0-9ca7-4180-a00f-15c5b4122246)
 
