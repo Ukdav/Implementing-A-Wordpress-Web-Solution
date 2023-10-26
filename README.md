@@ -48,17 +48,28 @@ All devices in linux reside in */dev/* directory. we can inspect or check it usi
 
 ![sudo gdisk](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/24bc17b7-06f0-49e9-9f81-82617f483db1)
 
-![lsblk for new partion](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/9612c4f0-9ca7-4180-a00f-15c5b4122246)
+![attaches disk attache](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/a6f87233-4921-4707-b6a5-b8e681582408)
 
 * Installing LVM2 package for creating logical volumes on a linux server, using this command: *sudo yum install lvm2* and RUN *sudo pvs*
 
-![sudo yum install lvm2](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/04d2af20-1b69-4a6a-8bd4-3c1a91f46644)
+![sudo yum install lvm2](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/e73acaca-8436-438b-a3b7-fa7a9834ae9d)
 
 * Creating Physical Volumes on the partitioned disk volumes
+  
 *sudo pvcreate <partition_path>*
 
-* Verify that your physical volume has been created successfully by running this command : *sudo pvs*
+sudo pvcreate /dev/nvme1n1p1
 
+sudo pvcreate /dev/nvme2n1p1
+
+sudo pvcreate /dev/nvme3n1p1
+
+Verify that your physical volume has been created successfully by running this command : *sudo pvs*
+
+![sudo  pvcreate and pvs](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/4ce8596b-9be0-4e4f-ae54-23bd9681f246)
+
+
+* 
 ![pvcreate](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/12ff974e-1fa2-4519-9cec-9ebab549d13b)
 
 * Use Vgcreate utility to add all 3 PVS to a volume group (VG). Name the VG webdata-vg using this command: *sudo vgcreate webdata-vg /dev/nvme1n1p9 /dev/nvme2n1p1 /dev/nvme3n1p1*
