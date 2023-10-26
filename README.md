@@ -22,11 +22,11 @@ Prerequisites:
 
 ![attaching vol](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/08083980-ba15-441a-9657-dcea23f5fb51)
 
-![volume attached](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/f9d0c055-3e25-4857-952d-9df0c6ded923)
+![attached the voume](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/f606c467-392b-41c2-b40e-1146e5b0eac9)
 
 * SSH into the instance and on the EC2 terminal, view the disks attached to the instance. This is achieved using the *lsblk*  command.
 
-![lsblk](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/72c4fa29-3c80-4fb4-8274-120628da539d)
+![lsblk](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/9e3d58db-eba0-42ac-a3fc-80820c943f57)
 
 In Red Hat Enterprise Linux and other Linux distributions, nvme1n1 represents an NVMe (Non-Volatile Memory Express) device. NVMe devices are typically used for high-speed storage and are commonly found in modern servers and workstations.
 
