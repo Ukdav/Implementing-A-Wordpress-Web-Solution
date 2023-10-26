@@ -233,6 +233,9 @@ Repeated all the steps taken to configure the web server on the db server. Chang
 
 **Starting database server** 
 
+![mysql on dbserver](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/e1a3c7a7-8935-4a44-9bad-4b7cf3ab06b8)
+
+
 
 
 
