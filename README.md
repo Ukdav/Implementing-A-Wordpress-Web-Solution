@@ -82,11 +82,13 @@ Verify that your physical volume has been created successfully by running this c
 
 *sudo lvcreate -n logs-lv -L 14G webdata-vg*
 
-* Verify that your logical volume has been created successfully by running *sudo lvs*
+* Verify that your logical volume has been created successfully by running *sudo lvs* and *lvsdiskscan8
 
-![lvs](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/0307c237-c5ab-4622-bf83-91ebf40c1a42)
+![sudo lvcreated](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/647824e5-5645-4fff-82d8-ae90b8358207)
 
-* To verify the entire setup using the below command
+![sudo lvmdiskscan](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/73052701-6e3b-4bac-b355-0d9e0b65cc03)
+
+* To verify the entire setup use the below command
 
 *sudo vgdisplay -v #view complete setup - VG, PV, and LV*
 
@@ -94,15 +96,18 @@ Verify that your physical volume has been created successfully by running this c
 
 *Sudo lsblk*
 
-![sudo lsblk](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/c37d3b90-3571-4a7e-952b-1d3592974efa)
+![lsblk2](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/42ed8970-0da8-4264-ac3a-57d63c38a54c)
 
 * Our logical volumes are ready to be used as filesystems for storing application and log data.
+  
 * Creating filesystems on both logical volumes
   
 * Use *mkfs.ext4* to formant the logical volumes with ext4 filessystem by using the below code:
 
 *sudo mkfs -t ext4 /dev/webdata-vg/apps-lv*
 *sudo mkfs -t ext4 /dev/webdata-vg/logs-lv*
+
+![sudo mkfs](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/fc295ece-8d5f-474c-a07e-ef6a8dabcc6d)
 
 * The Apache webserver uses the html folder in the var directory to store web content. We create this directory and also a directory for collecting log data of our application
 
