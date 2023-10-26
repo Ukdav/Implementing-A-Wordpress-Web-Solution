@@ -231,9 +231,36 @@ Repeated all the steps taken to configure the web server on the db server. Chang
 
 ![configure SEluns Policies](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/cc854d84-6c39-45e8-b26c-6bffc77f2ddb
 
-**Starting database server** 
+* **Starting database server** 
 
 ![mysql on dbserver](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/e1a3c7a7-8935-4a44-9bad-4b7cf3ab06b8)
+
+## STEP4 Installing MySQL on DB Server
+
+*sudo yum update*
+*sudo yum install mysql-server
+
+![installing mysql on dbserver](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/9015c89a-970f-4894-8061-adb5c25db018)
+
+To ensure that database server starts automatically on reboot or system startup
+
+sudo systemctl restart mysqld
+sudo systemctl enable mysqld
+
+## STEP5 Setting Up DB Server to work with WordPress
+sudo mysql
+CREATE DATABASE wordpress;
+CREATE USER `myuser`@`<Web-Server-Private-IP-Address>` IDENTIFIED BY 'mypass';
+GRANT ALL ON wordpress.* TO 'myuser'@'<Web-Server-Private-IP-Address>';
+FLUSH PRIVILEGES;
+SHOW DATABASES;
+exit
+
+![CREATE DATABASE ON MYSQL](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/4f16691e-b723-431c-8868-2eca5b8595c5)
+
+
+
+
 
 
 
