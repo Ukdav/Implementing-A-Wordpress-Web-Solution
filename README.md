@@ -163,11 +163,9 @@ update /etc/fstab/ in this formant using your UUID and remember to remove the le
 
 *sudo systemctl daemon-reload*
 
-![df -hcommand](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/3cbaa0d2-7345-4e87-aa1d-fe68a73a7f9a)
+![df hmount mapper](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/24938c4e-4fc4-42dd-971c-d6eae075397f
 
 * Verify your setup by running df -h output be displayed like this
-
-![df hmount mapper](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/24938c4e-4fc4-42dd-971c-d6eae075397f)
 
 
 ## Installing WordPress and configuring to use MYSQL DATABASE
