@@ -184,6 +184,21 @@ Repeated all the steps taken to configure the web server on the db server. Chang
   
 ![install php](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/8407c256-37a2-424d-9047-58658f530fcb)
 
+![module enable](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/fb44dbd9-ec6c-458d-9957-6be3c04cbba1
+
+![module reset](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/0114e1f5-8767-4f8b-9553-a3f0b0ff1bd5)
+
+![update all webapps](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/a5eff0c2-1879-4c41-8ae3-4996933192c5)
+
+![update php list](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/05a4828a-10b3-4fc3-ad61-6a41487a7652)
+
+![utility update](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/84c627af-f0ac-423f-8166-350ba315e8df)
+
+
+
+
+
+
 
 
 
