@@ -76,7 +76,7 @@ Verify that your physical volume has been created successfully by running this c
 
 * Use Lvcreate utility to create 2 logical volumes. apps-lv (Use half of the PV size) and logs-lv use the remaining space of the PV size.
 
-*NOTE* apps-lv will be used to store data of the website while, logs-lv will be used to store data for logs. below are the commands:
+**NOTE** apps-lv will be used to store data of the website while, logs-lv will be used to store data for logs. below are the commands:
 
 *sudo lvcreate -n apps-lv -L 14G webdata-vg*
 
@@ -98,7 +98,7 @@ Verify that your physical volume has been created successfully by running this c
 
 ![lsblk2](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/42ed8970-0da8-4264-ac3a-57d63c38a54c)
 
-* Our logical volumes are ready to be used as filesystems for storing application and log data.
+**Our logical volumes are ready to be used as filesystems for storing application and log data**
   
 * Creating filesystems on both logical volumes
   
@@ -109,13 +109,13 @@ Verify that your physical volume has been created successfully by running this c
 
 ![sudo mkfs](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/fc295ece-8d5f-474c-a07e-ef6a8dabcc6d)
 
-* The Apache webserver uses the html folder in the var directory to store web content. We create this directory and also a directory for collecting log data of our application
+* The Apache webserver uses the html folder in the var directory to store web content. We created this directory and also a directory for collecting log data of our application
 
 * Create /var/www/html directory to store website files
 
 *sudo mkdir -p /var/www/html/*
 
-* Create /home/recovery/logs to store backup of log data
+**Create /home/recovery/logs to store backup of log data**
 
 *sudo mkdir -p /home/recovery/logs/*
 
@@ -157,7 +157,7 @@ update /etc/fstab/ in this formant using your UUID and remember to remove the le
 
 ![sudo vi etcfstab1](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/c0dbe65d-80f2-42af-ac66-4438b980ed20)
 
-* Test the configuration and reload the daemon
+**Test the configuration and reload the daemon**
 
 *sudo mount -a*
 
@@ -173,12 +173,11 @@ update /etc/fstab/ in this formant using your UUID and remember to remove the le
 
 Repeated all the steps taken to configure the web server on the db server. Changed the apps-lv logical volume to db-lv
 
-![new server 1](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/9e29e803-ca16-40b8-a805-2719dc129c31)
-
+![df -hcommand](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/078fcf4f-a45d-4f28-be58-d7a2f89f6523)
 
 **Step 3: Configuring Web Server**
 
-* Run updates and install httpd on web server
+**Run updates and install httpd on web server**
   
 *yum install -y update*
 
@@ -188,11 +187,11 @@ Repeated all the steps taken to configure the web server on the db server. Chang
 
 ![update all webapps](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/35fb5ecf-e977-4b51-802e-b83411f7dd5b)
 
-* Start web server
+**Start web server**
 
 ![mysql on dbserver](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/d5f8d445-e9c1-45ba-ba84-b26626aeaef8)
 
-* Installing PHP and its dependencies
+**Installing PHP and its dependencies**
   
 ![install php](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/8407c256-37a2-424d-9047-58658f530fcb)
 
@@ -206,7 +205,33 @@ Repeated all the steps taken to configure the web server on the db server. Chang
 
 ![utility update](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/84c627af-f0ac-423f-8166-350ba315e8df)
 
-![fedoral project](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/3272abfa-dddb-488e-b812-fa20e4083d04)
+![fedoral project](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/3272abfa-dddb-488e-b812-fa20e4083d04
+
+**Restarting Apache: sudo systemctl restart httpd**
+
+**Downloading wordpress and moving it into the web content directory**
+
+* mkdir wordpress
+  
+* cd   wordpress
+  
+*sudo wget http://wordpress.org/latest.tar.gz*
+*sudo tar xzvf latest.tar.gz*
+*sudo rm -rf latest.tar.gz*
+*sudo cp wordpress/wp-config-sample.php wordpress/wp-config.php*
+*sudo cp -R wordpress /var/www/html/*
+
+**Configure Selinux Policies**
+* 
+*sudo chown -R apache:apache /var/www/html/wordpress*
+*sudo chcon -t httpd_sys_rw_content_t /var/www/html/wordpress -R*
+*sudo setsebool -P httpd_can_network_connect=1*
+
+![copy wordpress to varwwwhtml](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/7a5d7a83-9a65-4953-874b-f3f8ef85be9c)
+
+![configure SEluns Policies](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/cc854d84-6c39-45e8-b26c-6bffc77f2ddb)
+
+
 
 
 
