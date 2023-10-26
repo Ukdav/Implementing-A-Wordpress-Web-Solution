@@ -216,15 +216,21 @@ Repeated all the steps taken to configure the web server on the db server. Chang
 * cd   wordpress
   
 *sudo wget http://wordpress.org/latest.tar.gz*
+
 *sudo tar xzvf latest.tar.gz*
+
 *sudo rm -rf latest.tar.gz*
+
 *sudo cp wordpress/wp-config-sample.php wordpress/wp-config.php*
+
 *sudo cp -R wordpress /var/www/html/*
 
 **Configure Selinux Policies**
 * 
 *sudo chown -R apache:apache /var/www/html/wordpress*
+
 *sudo chcon -t httpd_sys_rw_content_t /var/www/html/wordpress -R*
+
 *sudo setsebool -P httpd_can_network_connect=1*
 
 ![copy wordpress to varwwwhtml](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/7a5d7a83-9a65-4953-874b-f3f8ef85be9c)
@@ -249,14 +255,38 @@ sudo systemctl enable mysqld
 
 ## STEP5 Setting Up DB Server to work with WordPress
 sudo mysql
-CREATE DATABASE wordpress;
-CREATE USER `myuser`@`<Web-Server-Private-IP-Address>` IDENTIFIED BY 'mypass';
-GRANT ALL ON wordpress.* TO 'myuser'@'<Web-Server-Private-IP-Address>';
+
+CREATE DATABASE Wordpress;
+
+CREATE USER `myuser`@`172.31.32.0/20` IDENTIFIED BY 'pass';
+
+GRANT ALL ON wordpress.* TO 'myuser'@'172.31.32.0/20';
+
 FLUSH PRIVILEGES;
+
 SHOW DATABASES;
+
 exit
 
 ![CREATE DATABASE ON MYSQL](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/4f16691e-b723-431c-8868-2eca5b8595c5)
+
+* Ensure that we add port 3306 on our db server to allow our web server to access the database server.
+
+![port 3306](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/fcfd0f6e-31c8-4040-bb76-22a013dbe1b4)
+
+## Connecting Web Server to DB Server
+
+**Installing mySQl client on the web server so we can connect to the db server**
+
+**sudo yum install mysql-server
+
+sudo mysql -u myuser -p -h <172.31.47.192>
+
+![connecting from webserver to db](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/c82fbfc6-fc8f-445a-bcb2-8eb23ca0cfa4)
+
+
+
+
 
 
 
