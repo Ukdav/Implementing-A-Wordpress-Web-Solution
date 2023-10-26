@@ -229,7 +229,11 @@ Repeated all the steps taken to configure the web server on the db server. Chang
 
 ![copy wordpress to varwwwhtml](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/7a5d7a83-9a65-4953-874b-f3f8ef85be9c)
 
-![configure SEluns Policies](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/cc854d84-6c39-45e8-b26c-6bffc77f2ddb)
+![configure SEluns Policies](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/cc854d84-6c39-45e8-b26c-6bffc77f2ddb
+
+**Starting database server** 
+
+
 
 
 
