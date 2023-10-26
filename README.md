@@ -174,11 +174,19 @@ Repeated all the steps taken to configure the web server on the db server. Chang
 
 *sudo yum -y install wget httpd php php-mysqlnd php-fpm php-json*
 
-![sudo yum -y](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/bf8fb0c5-76b1-4fce-a7fa-8d1adc92e3c4)
+![fedoral project](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/de151244-38d5-40ca-9c38-ffcf33980624)
 
 * Start web server
 
-![fedoral project](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/c8048fb6-da8b-4531-bcb2-ddbc7b0af1f6)
+![mysql on dbserver](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/d5f8d445-e9c1-45ba-ba84-b26626aeaef8)
+
+* Installing PHP and its dependencies
+  
+![install php](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/8407c256-37a2-424d-9047-58658f530fcb)
+
+
+
+
 
 
 
