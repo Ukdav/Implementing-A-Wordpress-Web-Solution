@@ -284,6 +284,16 @@ sudo mysql -u myuser -p -h <172.31.47.192>
 
 ![connecting from webserver to db](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/c82fbfc6-fc8f-445a-bcb2-8eb23ca0cfa4)
 
+Ensure that you are specifying the correct path to the directory where the wp-config.php file should be located. using this command to edit the database server with your credentials:
+
+*sudo vi /var/www/html/wordpress/wp-config.php*
+
+![config](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/d5c1fadc-a3f4-4b5e-8ddc-2588499305df)
+
+![sudo vi](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/e9c80ebd-8a21-4bff-b2e1-3541f2334ce6)
+
+
+
 
 
 
