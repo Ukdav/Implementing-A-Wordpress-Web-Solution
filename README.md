@@ -163,7 +163,8 @@ update /etc/fstab/ in this formant using your UUID and remember to remove the le
 
 *sudo systemctl daemon-reload*
 
-![df hmount mapper](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/24938c4e-4fc4-42dd-971c-d6eae075397f
+![df hmount mapper](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/dde40441-c931-4dad-acfb-ce0403a4a51d)
+
 
 * Verify your setup by running df -h output be displayed like this
 
