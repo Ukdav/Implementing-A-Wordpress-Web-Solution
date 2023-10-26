@@ -68,15 +68,11 @@ Verify that your physical volume has been created successfully by running this c
 
 ![sudo  pvcreate and pvs](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/4ce8596b-9be0-4e4f-ae54-23bd9681f246)
 
-
-* 
-![pvcreate](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/12ff974e-1fa2-4519-9cec-9ebab549d13b)
-
 * Use Vgcreate utility to add all 3 PVS to a volume group (VG). Name the VG webdata-vg using this command: *sudo vgcreate webdata-vg /dev/nvme1n1p9 /dev/nvme2n1p1 /dev/nvme3n1p1*
   
 * verifying that your VG has been created successfully by running this commad *sudo vgs*
 
-![vgcreate](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/2a11eb73-d3ab-47e3-8847-c177f3ab32a2)
+![sudo vgcreated and vgs](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/64f81935-36d2-432d-b3c0-cd28382fbff5)
 
 * Use Lvcreate utility to create 2 logical volumes. apps-lv (Use half of the PV size) and logs-lv use the remaining space of the PV size.
 
