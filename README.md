@@ -125,13 +125,13 @@ Verify that your physical volume has been created successfully by running this c
 
 *sudo mount /dev/webdata-vg/apps-lv /var/www/html/*
 
-![mkfs](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/2fb015ae-3a89-49e5-a5ee-60b2e615d6be)
+![mkdir](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/11f271ef-00de-47ff-936c-0f9056912cef)
 
 * Use the *rsync* utility to backup all the files in the log directory /var/log/ into /home/recovery/logs (This is required before mounting the file system)
 
 * Using the following code: *sudo rsync -av /var/log/. /home/recovery/logs/*
 
-![rsync](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/fc3722cc-586f-4e9e-933f-9ab5c81ad746)
+![sudo moung rsync](https://github.com/Ukdav/Implementing-A-Wordpress-Web-Solution/assets/139593350/3186cdd9-7a69-4c8c-9326-14ba3b09b853)
 
 * Mount /var/log/ on logs-lv logical volume. (Note that all the existing data on /var/log/ will be deleted. That is why the above step is very important). 
 
